@@ -1,0 +1,10 @@
+**/nbproject/private/
+**/nb/project/Marefile-*.mk
+**/nbproject/Package-*.bash
+nbproject/
+build/
+dist/
+nbdist/
+.nb-gradle/
+build.xml
+manifest.mf
