@@ -29,9 +29,4 @@ public class Main {
             System.out.println(c.getName() + " : " + c.sumAllAccs() + " korun");
         }
     }
-    
-    /*
-    dfhvdfydfrstbnsrnrjkn
-    */
-    
 }
