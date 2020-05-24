@@ -1,0 +1,36 @@
+Kdo může během jízdy kouřit?
+a: Řidič nákladního vozidla. (1)
+b: Řidič motocyklu. (0)
+c: Řidič autobusu. (0)
+Co je průběžný pruh?
+a: Je to jízdní pruh probíhající v původním směru křižovatkou nebo v místě, kde se mění počet jízdních pruhů. (1)
+b: Je to střední jízdní pruh tam, kde jsou na vozovce vyznačeny alespoň tři jízdní pruhy v jednom směru jízdy. (0)
+c: Je to jízdní pruh, který je po ukončení znovu obnoven a vyznačen na vozovce. (0)
+Co je silnice pro motorová vozidla? 
+a: Je to každá pozemní komunikace s výjimkou dálnic. (0)
+b: Je to silnice označená dopravní značkou Rychlostní komunikace. (0)
+c: Je to pozemní komunikace označená dopravní značkou Silnice pro motorová vozidla. (1)
+Co je dálnice?
+a: Je to pozemní komunikace o třech nebo více jízdních pruzích vyznačených na vozovce v jednom směru jízdy. (0)
+b: Je to pozemní komunikace označená dopravní značkou Dálnice. (1)
+c: Je to pozemní komunikace označená dopravní značkou Dálnice nebo dopravní značkou Silnice pro motorová vozidla. (0)
+Co musí mít motorové vozidlo za jízdy? 
+a: Zavřena boční okna. (0)
+b: Vždy rozsvícena všechna světla. (0)
+c: Rozsvícena obrysová světla a potkávací světla nebo světla pro denní svícení, pokud je jimi vybaveno podle zvláštního právního předpisu. (1)
+Co je zakázáno v provozu na pozemních komunikacích? 
+a: Troubit. (0)
+b: Neoprávněně užívat zvláštních výstražných světel a zvláštního zvukového výstražného znamení, které užívá vozidlo s právem přednostní jízdy. (1)
+c: Svítit za nesnížené viditelnosti. (0)
+Chodec na přechodu pro chodce signalizuje úmysl přejít vozovku mávnutím bílou slepeckou holí ve směru přecházení. Jak se zachováte?
+a: Snížím rychlost jízdy nebo zastavím vozidlo před přechodem pro chodce a umožním chodci nerušené a bezpečné přejití vozovky. (1)
+b: Budu pokračovat v jízdě, protože nevidomý člověk bez doprovodu nesmí přecházet vozovku. (0)
+c: Zvukovým výstražným znamením dám najevo, že nemůže přecházet přes vozovku a budu pokračovat v jízdě. (0)
+Jedete za hustého deště za nákladním vozidlem, které intenzivně znečišťuje Vaše přední okno. Jak se zachováte?
+a: Pojedete co nejtěsněji za ním. (0)
+b: Zvýšíte rozestup mezi vozidly. (1)
+c: Okamžitě zahájíte předjíždění. (0)
+Co je pěší zóna? 
+a: Oblast, jejíž začátek je označen dopravní značkou Pěší zóna a konec je označen dopravní značkou Konec pěší zóny. (1)
+b: Oblast, jejíž začátek je označen dopravní značkou Stezka pro chodce a konec je označen dopravní značkou Konec stezky pro chodce. (0)
+c: Každý chodník, oddělený od vozovky výškově nebo jinak, který jiní účastníci provozu než chodci nesmí použít. (0)

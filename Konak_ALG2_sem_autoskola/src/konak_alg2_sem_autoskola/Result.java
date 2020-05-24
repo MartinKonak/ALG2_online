@@ -23,7 +23,7 @@ public class Result implements ComparingInterface, Comparable<Result>{
 
     @Override
     public String toString() {
-        return String.format("Name: %-10sScore: %-10sTime: %-8s", name, String.format("%d", score), time);
+        return String.format("Name: %-12sScore: %-18sTime: %-8s", name, String.format("%d", score), time);
     }  
     
     /**
@@ -32,8 +32,8 @@ public class Result implements ComparingInterface, Comparable<Result>{
      * @return boolean true - smaller, false - bigger
      */
     @Override
-    public boolean isSmaller(ComparingInterface o) {
-        return this.score > ((Result)o).score;
+    public boolean isBigger(ComparingInterface o) {
+        return this.score < ((Result)o).score;
     }
 
     @Override

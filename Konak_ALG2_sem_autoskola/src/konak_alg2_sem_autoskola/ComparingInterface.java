@@ -6,6 +6,6 @@ package konak_alg2_sem_autoskola;
  */
 public interface ComparingInterface {
     
-    boolean isSmaller(ComparingInterface o);    
+    boolean isBigger(ComparingInterface o);    
     
 }

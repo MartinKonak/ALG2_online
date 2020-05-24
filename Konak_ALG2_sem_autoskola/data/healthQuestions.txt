@@ -1,0 +1,12 @@
+Poraněný je při vědomí a stěžuje si na silnou bolest v oblasti zad, eventuálně na brnění nebo necitlivost dolních končetin. Jaké by mohl mít poranění?
+a: Zlomeniny dolních končetin. (0)
+b: Poranění hrudníku. (0)
+c: Poranění páteře, při změně citlivosti také poranění míchy. (1)
+Jak se zachováte, když se poraněný po dopravní nehodě domáhá tekutin?
+a: Poskytnu mu tekutiny v neomezeném množství. (0)
+b: Nedám mu napít ani přes jeho naléhání. (1)
+c: Mohu mu dát i najíst. (0)
+Jste svědek dopravní nehody, na místě jsou dva zranění, z nichž jeden je v bezvědomí, druhý při vědomí, ale výrazně krvácí. Jak se zachováte? 
+a: Nejdříve zjistím, zda poraněný v bezvědomí dýchá. (0)
+b: Neprodleně zastavím masivní krvácení, zjistím stav poraněného v bezvědomí, zavolám ZS a zajistím místo nehody. (1)
+c: Zajistím parkovací místo vozidlu ZS a vyčkám jeho příjezdu. (0)

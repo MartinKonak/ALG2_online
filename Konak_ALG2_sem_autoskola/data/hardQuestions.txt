@@ -1,0 +1,36 @@
+Co znamená dát přednost v jízdě?
+a: Povinnost řidiče vždy zastavit vozidlo před hranicí křižovatky nebo před vjezdem na jinou pozemní komunikaci. (0)
+b: Povinnost řidiče nezahájit jízdu nebo jízdní úkon nebo v nich nepokračovat, jestliže by řidič, který má přednost v jízdě, musel náhle změnit směr nebo rychlost jízdy. (1)
+c: Povinnost řidiče nezahájit jízdu nebo jízdní úkon nebo v nich nepokračovat pouze pokud do křižovatky přijíždí vozidlo nebo tramvaj zprava. (0)
+Co je motorové vozidlo?
+a: Je to vozidlo poháněné vlastní pohonnou jednotkou, ne však trolejbus. (0)
+b: Je to vozidlo poháněné vlastní pohonnou jednotkou a tramvaj. (0)
+c: Je to nekolejové vozidlo poháněné vlastní pohonnou jednotkou a trolejbus. (1)
+Co je řidič povinen neprodleně udělat, dojde-li při jízdě vozidla v tunelu k poruše vozidla, pro kterou se toto vozidlo stalo nepojízdným, nebo dojde-li k dopravní nehodě? 
+a: Opustit tunel. (0)
+b: Vypnout motor, a je- li k vytápění vozidla použito nezávislé topení, vypnout i toto topení. (1)
+c: Vypnout osvětlení vozidla. (0)
+Kdo má přednost při čerpání pohonných hmot?
+a: Řidiči vozidel s právem přednostní jízdy; přitom nepoužívají zvláštních výstražných znamení. (1)
+b: Řidiči vozidel s právem přednostní jízdy; k upozornění ostatních řidičů však musejí použít zvláštních výstražných znamení. (0)
+c: Řidiči vozidel hromadné dopravy osob, například autobusů, a řidiči vozidel přepravujících zboží, které podléhá rychlé zkáze. (0)
+Co patří mezi prvky aktivní bezpečnosti? 
+a: Airbag. (0)
+b: Deformovatelná příď. (0)
+c: Dobrý výhled z vozidla. (1)
+Co znamená zastavit? 
+a: Uvést vozidlo do klidu na dobu nezbytně nutnou k neprodlenému nastoupení nebo vystoupení přepravovaných osob anebo k neprodlenému naložení nebo složení nákladu. (1)
+b: Povinnost řidiče nezahájit jízdní úkon nebo v něm nepokračovat, jestliže by řidič, který má přednost v jízdě, musel náhle změnit směr nebo rychlost jízdy. (0)
+c: Přerušit jízdu z důvodu nezávislého na vůli řidiče, například při poruše vozidla. (0)
+Co se rozumí aktivní bezpečností vozidla?
+a: Vlastnosti vozidla minimalizující škody v průběhu dopravní nehody. (0)
+b: Vlastnosti vozidla minimalizující příčiny vzniku dopravní nehody. (1)
+c: Vlastnosti vozidla minimalizující následky dopravní nehody po jejím vzniku. (0)
+Co znamená stát?
+a: Uvést vozidlo do klidu nad dobu povolenou pro zastavení. (1)
+b: Zastavit vozidlo u pravého okraje vozovky. (0)
+c: Zastavit před světelným signálem nebo železničním přejezdem. (0)
+Na čem je závislá přilnavost mezi pneumatikou a povrchem vozovky?
+a: Na huštění pneumatiky a hloubce jejího dezénu. Druh povrchu vozovky nemá výraznější vliv na přilnavost. (0)
+b: Na druhu povrchu vozovky. Huštění a hloubka dezénu pneumatiky výrazně přilnavost neovlivňují. (0)
+c: Na huštění pneumatiky, hloubce jejího dezénu a druhu povrchu vozovky. (1)

@@ -1,0 +1,36 @@
+Co smí užít řidič v provozu na pozemních komunikacích?
+a: Jen vozidlo, které splňuje technické podmínky stanovené zvláštním předpisem. (1)
+b: I vozidlo, které sice nesplňuje technické podmínky, ale majitel vozidla dovolí vozidlo užít nebo jeho užití přikáže. (0)
+c: I vozidlo, které splňuje jen některé technické podmínky stanovené zvláštním předpisem, pokud řidič dbá při jízdě zvýšené opatrnosti. (0)
+Co je krajnice?
+a: Je to část vozovky, na kterou je ve všech případech zakázáno vjíždět. (0)
+b: Je to část povrchu pozemní komunikace ležící mezi okrajem přilehlého jízdního pruhu a hranou koruny pozemní komunikace, skládá se zpravidla ze zpevněné části a nezpevněné části. (1)
+c: Je to část povrchu pozemní komunikace, která je vždy označena značkou. (0)
+Co může seřizovat stanice technické kontroly při pravidelné technické prohlídce?
+a: Brzdovou soustavu, řízení a nápravu. (0)
+b: Řídící funkce motoru u motorů s řízeným emisním systémem. (0)
+c: Světlomety, pokud se jedná o jednoduché seřízení. (1)
+Kam se umisťuje kontrolní nálepka osvědčující technickou způsobilost vozidla?
+a: Na zadní tabulku registrační značky. (1)
+b: Na přední tabulku registrační značky. (0)
+c: Podle požadavku zákazníka. (0)
+Kdy smíte při jízdě s motorovým vozidlem, které je vybaveno světly pro denní svícení, těmito světly svítit?
+a: Pouze při nesnížené viditelnosti, a to bez současného použití obrysových světel. (1)
+b: Při nesnížené viditelnosti samostatně a při současném použití obrysových světel i při snížené viditelnosti. (0)
+c: Pouze v době od 6.00 hodin do 20.00 hodin a jen při současném použití obrysových světel. (0)
+Jak lze snížit spotřebu paliva vozidla? 
+a: Použitím dražšího paliva. (0)
+b: Dodržováním tlaku vzduchu v pneumatikách, který je předepsaný výrobcem. (1)
+c: Nepoužíváním nejvyššího převodového stupně. (0)
+Kdo může přistavit vozidlo k pravidelné technické prohlídce?
+a: Jakákoliv osoba, které je vozidlo svěřeno. (1)
+b: Pouze provozovatel vozidla. (0)
+c: Pouze vlastník vozidla. (0)
+Kde se zjišťuje správný tlak huštění pneumatik?
+a: Na studených, jízdou nezahřátých pneumatikách. (1)
+b: Na jízdou zahřátých pneumatikách. (0)
+c: Na pneumatikách bez ohledu na jejich teplotu. (0)
+Jak smí v obci zastavit a stát řidič motorového vozidla, jehož celková hmotnost nepřevyšuje 3.500 kg?
+a: I kolmo, popřípadě šikmo k okraji pozemní komunikace; ve druhé řadě smí zastavit pouze řidič vozidla taxislužby. (0)
+b: I kolmo, popřípadě šikmo k okraji pozemní komunikace nebo zastavit v druhé řadě, pokud tím není ohrožena bezpečnost a plynulost provozu. (1)
+c: Pouze vpravo ve směru jízdy rovnoběžně s okrajem pozemní komunikace a co nejblíže k němu; řidič vozidla taxislužby smí zastavit i v druhé řadě. (0)
