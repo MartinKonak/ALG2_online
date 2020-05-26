@@ -53,7 +53,7 @@ public class Main {
                         System.out.println(q); //printing question
                         answer = checkAnswer(1); //reading and checking answer
                         System.out.println(answering(q, answer)); //printing answer of program
-                        if (answering(q, answer).equals("Correct answer, you got 1 point.")) { //if right, raise score
+                        if (answering(q, answer).equals("Correct answer, you scored a point.")) { //if right, raise score
                             score++;
                         }
                         System.out.println("\nScore: " + score); //print score
@@ -64,7 +64,7 @@ public class Main {
                         System.out.println(q);
                         answer = checkAnswer(1);
                         System.out.println(answering(q, answer));
-                        if (answering(q, answer).equals("Correct answer, you got 1 point.")) {
+                        if (answering(q, answer).equals("Correct answer, you scored a point.")) {
                             score += 2;
                         }
                         System.out.println("\nScore: " + score);
@@ -75,7 +75,7 @@ public class Main {
                         System.out.println(q);
                         answer = checkAnswer(1);
                         System.out.println(answering(q, answer));
-                        if (answering(q, answer).equals("Correct answer, you got 1 point.")) {
+                        if (answering(q, answer).equals("Correct answer, scored a point.")) {
                             score += 3;
                         }
                         System.out.println("\nScore: " + score);
@@ -86,7 +86,7 @@ public class Main {
                     System.out.println(q);
                     answer = checkAnswer(1);
                     System.out.println(answering(q, answer));
-                    if (answering(q, answer).equals("Correct answer, you got 1 point.")) {
+                    if (answering(q, answer).equals("Correct answer, scored a point.")) {
                         score++;
                     }
                     System.out.println("\nScore: " + score);
@@ -143,21 +143,21 @@ public class Main {
         switch(a){
             case "a":
                 if (q.getB1()){
-                    answer = "Correct answer, you got 1 point.";
+                    answer = "Correct answer, you scored a point.";
                 }else{
                     answer = "Incorrect answer!\nCorrect was: " + q.findCorrectAnswer();
                }
                 break;
             case "b":
                 if (q.getB2()){
-                    answer = "Correct answer, you got 1 point.";
+                    answer = "Correct answer, you scored a point.";
                 }else{
                     answer = "Incorrect answer!\nCorrect was: " + q.findCorrectAnswer();
                 }
                 break;
             case "c":
                 if (q.getB3()){
-                    answer = "Correct answer, you got 1 point.";
+                    answer = "Correct answer, you scored a point.";
                 }else{
                     answer = "Incorrect answer!\nCorrect was: " + q.findCorrectAnswer();
                 }

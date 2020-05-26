@@ -83,6 +83,7 @@ public class Question {
         return String.format("%s\n%s\n%s\n%s\n", q, answerToString(a1), answerToString(a2), answerToString(a3));
     }
     
+    //testing method
     /*public static void main(String[] args){
         String[] s = {
             "01) Co smí užít řidič v provozu na pozemních komunikacích?",
