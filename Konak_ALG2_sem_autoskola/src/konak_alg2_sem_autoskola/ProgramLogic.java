@@ -54,7 +54,7 @@ public class ProgramLogic{
     }
     
     /**
-     * Method picks one question at random
+     * Method picks one question for ArrayList at random
      * @param s - selects which type of question will be select
      * @return q - Object type Question
      */
@@ -103,7 +103,7 @@ public class ProgramLogic{
     }
     
     /**
-     * Mathod transforms ArrayList of Results into String
+     * Mathod transforms ArrayList of Results into String line
      * @param results - concrete ArrayList you want to transform
      * @return String line of results
      */

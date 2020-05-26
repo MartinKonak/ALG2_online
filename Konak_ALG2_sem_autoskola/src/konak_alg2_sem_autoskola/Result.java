@@ -27,7 +27,7 @@ public class Result implements ComparingInterface, Comparable<Result>{
     }  
     
     /**
-     * Comparing method
+     * Comparing condition
      * @param o - interface
      * @return boolean true - smaller, false - bigger
      */
@@ -35,7 +35,12 @@ public class Result implements ComparingInterface, Comparable<Result>{
     public boolean isBigger(ComparingInterface o) {
         return this.score < ((Result)o).score;
     }
-
+    
+    /**Comparing method
+     * 
+     * @param r - object Result
+     * @return 
+     */
     @Override
     public int compareTo(Result r) { //-1, 0, 1 - menší, stejné, větší
         double d = 0;

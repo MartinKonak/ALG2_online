@@ -17,11 +17,17 @@ public class Main {
      * @param args the command line arguments
      */
     public static void main(String[] args) throws IOException {
+        //menu vypisovaná při každém opětovném spuštění programu
         String menu = "Menu:\n1 - Start test\n2 - Show results tab\n0 - end program";
+        //zpráva, která se vypíše na začátko každého testu
         String testMsg = "Zobrazí se postupně 10 otázek,\nna které lze odpovídat zadáním přísluěné odpovědi (a, b, c),\nmáš neomezený čas na splnění testu,\nobtížnost se postupně zvyšuje\nmaximální pošet bodů je 19";
+        //umožňuje výběr funkcí programu
         int ch = 1;
+        //odpověď, je kontrolovaná metodami níže podle konkrétních požadavků
         String answer;
+        //počítadlo sk=ore
         int score;
+        //instance logické třídy
         ProgramLogic p = new ProgramLogic();
           
         System.out.println(menu);
@@ -46,7 +52,7 @@ public class Main {
                         }catch(IOException e){
                             System.out.println("File does not found");
                         }
-                    
+                    //první sada otázek
                     for (int i = 0; i < 3; i++) { // for easy
                         System.out.print((i + 1) + ") "); //number of question
                         q = p.selectQ("e"); // selecting random question
@@ -58,6 +64,7 @@ public class Main {
                         }
                         System.out.println("\nScore: " + score); //print score
                     }
+                    //medium otázky
                     for (int j = 0; j < 3; j++) { //for medium
                         System.out.print((j + 4) + ") ");
                         q = p.selectQ("m");
@@ -69,6 +76,7 @@ public class Main {
                         }
                         System.out.println("\nScore: " + score);
                     }
+                    //těžší otázky
                     for (int k = 0; k < 3; k++) { //for hard
                         System.out.print((k + 7) + ") ");
                         q = p.selectQ("h");
@@ -107,15 +115,15 @@ public class Main {
                     break;
                 //vypíše výsledkovou tabulku, dá možnost ji seřadit nebo jít zpět
                 case 2:
-                    System.out.println(printResults(p));
-                    System.out.println("Options:\n1 - sort list\n2 - clear tab\n0 - go back");
+                    System.out.println(printResults(p));//výpis
+                    System.out.println("Options:\n1 - sort list\n2 - clear tab\n0 - go back");//nabídka
                     answer = checkAnswer(4);
                     if (answer.equals("1")) {                        
-                        System.out.println(printSortedResults(p));
-                    }else if (answer.equals("2")) {
+                        System.out.println(printSortedResults(p));//seřazené výsledky
+                    }else if (answer.equals("2")) { //úplné smazání tabulky
                         System.out.println("Are you sure? (y/n)\ny will delete all results permanently");
                         answer = checkAnswer(2);
-                        if (answer.equals("y")) {
+                        if (answer.equals("y")) { // finální ujištění
                             p.clearResults();
                             p.saveResult(p.resultsToString(p.getResults()));
                             System.out.println(p.getResults());
@@ -123,12 +131,12 @@ public class Main {
                     }
                     System.out.println(menu);                    
                     break;
-                default:
+                default: // při špatném vstupu
                     System.out.println("Wrong choice!");
             } 
-            ch = scanInt();
+            ch = scanInt(); //nčítání každé odpovědi při výběru v menu
         }
-        System.out.println("End program...");
+        System.out.println("End program...");//last message
     }
     
     /**
