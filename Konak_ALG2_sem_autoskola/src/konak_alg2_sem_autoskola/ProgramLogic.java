@@ -24,13 +24,16 @@ public class ProgramLogic{
     
     /**
      * Method load questions from text file into ArrayList
+     * @param s1 - String - name of text file
+     * @param s2 - String - name of ArrayList
      * @throws FileNotFoundException
      * @throws IOException 
      */
-    public void loadQuestions(String s1, String s2) throws FileNotFoundException, IOException{
-        File quests = new File(System.getProperty("user.dir") + File.separator + "data" + File.separator + s1);
-        Scanner loadQuestions = new Scanner(quests);
-        while(loadQuestions.hasNext()){
+    public void loadQuestions(String s1, String s2)throws FileNotFoundException, IOException{
+        try{
+            File quests = new File(System.getProperty("user.dir") + File.separator + "data" + File.separator + s1);
+            Scanner loadQuestions = new Scanner(quests);
+            while(loadQuestions.hasNext()){
             String q = loadQuestions.nextLine();
             String a1 = loadQuestions.nextLine();
             String a2 = loadQuestions.nextLine();
@@ -50,6 +53,9 @@ public class ProgramLogic{
                     healthQuestions.add(qe);
                     break;
             }
+        }
+        }catch(Exception e){
+            throw new FileNotFoundException("File does not found!");
         }
     }
     

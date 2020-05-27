@@ -2,7 +2,6 @@ Name: test1       Score: 1                 Time: 00:00:02
 Name: test2       Score: 0                 Time: 00:00:03
 Name: test3       Score: 0                 Time: 00:00:02
 Name: martin2     Score: 2                 Time: 00:00:26
-Name: Verunka     Score: 8                 Time: 00:02:25
 Name: mart        Score: 10                Time: 00:00:54
 Name: test04      Score: 3                 Time: 00:00:17
 Name: test05      Score: 7                 Time: 00:02:43
