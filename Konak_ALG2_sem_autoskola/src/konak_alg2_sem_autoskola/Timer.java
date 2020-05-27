@@ -4,7 +4,7 @@ import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
 
 /**
- * Object type Timer
+ * Object type Timer, calculates time of the test
  * @author Martin Koňák
  */
 public class Timer{    

@@ -1,7 +1,7 @@
 package konak_alg2_sem_autoskola;
 
 /**
- * Object type Result
+ * Object type Result, represents result of the test
  * @author Martin Koňák
  */
 public class Result implements ComparingInterface, Comparable<Result>{

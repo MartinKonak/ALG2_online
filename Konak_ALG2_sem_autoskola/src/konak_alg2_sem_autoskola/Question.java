@@ -1,7 +1,7 @@
 package konak_alg2_sem_autoskola;
 
 /**
- * Object type Question
+ * Object type Question, saves question loaded from text file
  * @author Martin Koňák
  */
 public class Question {
