@@ -5,3 +5,6 @@ Name: martin2     Score: 2                 Time: 00:00:26
 Name: mart        Score: 10                Time: 00:00:54
 Name: test04      Score: 3                 Time: 00:00:17
 Name: test05      Score: 7                 Time: 00:02:43
+Name: test06      Score: 4                 Time: 00:01:05
+Name: testmail    Score: 0                 Time: 00:00:09
+Name: mailtest2   Score: 7                 Time: 00:00:09

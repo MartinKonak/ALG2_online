@@ -6,7 +6,11 @@
 package cmd;
 
 import java.io.File;
+import java.io.FileFilter;
+import java.io.FilenameFilter;
 import java.util.Date;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 /**
  *
@@ -20,8 +24,12 @@ public class Dir extends Command{
         if (params.length == 1) {
             files = actualDir.listFiles();
             return dirToString(files);
-        }else if(params.length == 2 && params[1] == "-o"){
-            
+        }else if(params.length == 2 && params[1].equals("-r")){//rekurze
+            return recursionDir(actualDir, "-");
+        }else if(params.length == 3 && params[1].equals("-e")){//extention
+            FileFilter fileFilter = (File pathname) -> pathname.getName().endsWith(params[2]);
+            files = actualDir.listFiles(fileFilter);
+            return dirToString(files);
         }
         return "invalid parameter";
     }
@@ -39,4 +47,14 @@ public class Dir extends Command{
         return sb.toString();
     }
     
+    private String recursionDir(File actDir, String floor){//metoda s rekurzí
+        StringBuilder sb = new StringBuilder("");
+        File[] files = actDir.listFiles();//list souborů
+        for(File f : files){           
+            if (f.isDirectory()) {//v případě, že je to složka, otevře ji a akce se zopakuje, dokud bude nacházet další
+                sb.append(floor + " " + f.getName() + "\n");//aktuální patro se vypíše
+                sb.append(recursionDir(new File(f.getParent() + File.separator + f.getName()),floor + "-"));            }
+        }
+        return sb.toString();
+    }
 }

@@ -11,23 +11,25 @@ import java.io.File;
  *
  * @author Martin Koňák
  */
-public class Cd extends Command{
+public class Cd extends Command {
 
     @Override
     public String execute(File actualDir) {
-                
-        File directory = new File(params[1]).getAbsoluteFile();
-        if(!"..".equals(params[1]) && directory.exists()){
-            CmdEditor.changeActualDir(directory);
-            return "Directory changed";
-        }else if(params[1].equals("..")){
-            File nDir = actualDir.getParentFile();
-            CmdEditor.changeActualDir(nDir);
-            return "Directory changed";
+
+        File directory = new File(actualDir.getAbsolutePath(), params[1]);
+
+        if (params.length == 2) {
+            if (!"..".equals(params[1]) && directory.exists()) {
+                CmdEditor.changeActualDir(directory);
+                return "Directory changed";
+            } else if (params[1].equals("..")) {
+                CmdEditor.changeActualDir(actualDir.getParentFile());
+                return "Directory changed";
+            } else {
+                return "Selected folder does not exist";
+            }
         }else{
-            return "Selected folder does not exist\n";
-            //return directory.getAbsolutePath();
+            return "Selected folder does not exist";
         }
     }
-    
 }

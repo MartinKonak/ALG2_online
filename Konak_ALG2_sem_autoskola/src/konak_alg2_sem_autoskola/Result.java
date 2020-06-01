@@ -35,6 +35,14 @@ public class Result implements ComparingInterface, Comparable<Result>{
     public boolean isBigger(ComparingInterface o) {
         return this.score < ((Result)o).score;
     }
+
+    public String getScoreString() {
+        return Integer.toString(score);
+    }   
+
+    public int getScore() {
+        return score;
+    }
     
     /**Comparing method
      * 
@@ -42,16 +50,8 @@ public class Result implements ComparingInterface, Comparable<Result>{
      * @return 
      */
     @Override
-    public int compareTo(Result r) { //-1, 0, 1 - menší, stejné, větší
-        double d = 0;
-        
-        if (d > 0) {
-            return 1;
-        }else if(d < 0){
-            return -1;
-        }else{
-            return 0;
-        }
+    public int compareTo(Result r) {
+        return r.score - this.score;
     }
     
 }
