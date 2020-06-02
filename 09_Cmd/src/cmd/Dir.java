@@ -53,7 +53,9 @@ public class Dir extends Command{
         for(File f : files){           
             if (f.isDirectory()) {//v případě, že je to složka, otevře ji a akce se zopakuje, dokud bude nacházet další
                 sb.append(floor + " " + f.getName() + "\n");//aktuální patro se vypíše
-                sb.append(recursionDir(new File(f.getParent() + File.separator + f.getName()),floor + "-"));            }
+                File r = new File(f.getParent() + File.separator + f.getName());
+                sb.append(recursionDir(r,floor + "-"));
+            }
         }
         return sb.toString();
     }
