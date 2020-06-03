@@ -1,4 +1,4 @@
-package pkg10_competition;
+package competition.app;
 
 import java.io.BufferedReader;
 import java.io.File;

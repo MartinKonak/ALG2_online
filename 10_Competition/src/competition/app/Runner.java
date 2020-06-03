@@ -1,4 +1,4 @@
-package pkg10_competition;
+package competition.app;
 
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
@@ -22,11 +22,11 @@ public class Runner implements Comparable<Runner>{
         this.number = number;
     }
 
-    public String getFirstName() {
+    public String getFirstname() {
         return firstName;
     }
 
-    public String getLastName() {
+    public String getLastname() {
         return lastName;
     }
 
@@ -73,11 +73,11 @@ public class Runner implements Comparable<Runner>{
         return this.runningTime().compareTo(o.runningTime());
     }
     
-    public static void main(String[] args){
+    /*public static void main(String[] args){
         Runner r = new Runner("Alice", "Malá", 23);
         r.setStartTime("09:00:00");
         r.setFinishTime("10:20:10:019");
         System.out.println(r);
-    }    
+    }*/   
     
 }
