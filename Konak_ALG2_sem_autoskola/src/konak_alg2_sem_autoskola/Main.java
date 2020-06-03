@@ -144,7 +144,11 @@ public class Main {
         }
         System.out.println("End program...");//last message
     }
-
+    /**
+     * Method checks file with regular expresion, if it is a test file
+     * @param s - name of file
+     * @return 
+     */
     public static boolean checkFiles(String s) {
         Pattern p = Pattern.compile(".txt$");
         Matcher m = p.matcher(s);
@@ -154,7 +158,13 @@ public class Main {
             return false;
         }
     }
-
+    /**
+     * Method print questions in selected order
+     * @param p - programLogic
+     * @param ch - choice - type of questions
+     * @param times - int - how many questions
+     * @param qcnt - int - counter of questions
+     */
     public static void printQuestions(ProgramLogic p,String ch, int times, int qcnt) {
         Question q = null;
         String answer;
