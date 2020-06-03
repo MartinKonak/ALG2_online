@@ -42,7 +42,7 @@ public class ReadResult {
                     }
                     LocalTime runningTime = LocalTime.ofNanoOfDay(dis.readLong());
                     System.out.println(firstname + " " + lastname + " " + runningTime.format(Runner.dtffinish));                   
-                }catch(EOFException e){ //zjištění konce souboru
+                }catch(EOFException e){
                     isEnd = true;
                 }
             }

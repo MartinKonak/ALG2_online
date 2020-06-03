@@ -27,7 +27,6 @@ public class Main {
                     break;
                 }catch(FileNotFoundException e){
                     System.out.println("Zadany neexistujici subor. Zadej znovu.");
-                    //e.printStackTrace(); vhodné pro debuggování
                 }
             }
                 System.out.println(c.getResults());

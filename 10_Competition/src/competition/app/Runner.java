@@ -7,47 +7,19 @@ import java.time.format.DateTimeFormatter;
  *
  * @author Martin Koňák
  */
-public class Runner implements Comparable<Runner>{
-    private String firstName;
-    private String lastName;
+public class Runner implements Comparable<Runner> {
     private int number;
+    private String firstname;
+    private String lastname;
     private LocalTime startTime;
     private LocalTime finishTime;
-    public final static DateTimeFormatter dtfstart = DateTimeFormatter.ofPattern("HH:mm:ss");
-    public final static DateTimeFormatter dtffinish = DateTimeFormatter.ofPattern("HH:mm:ss:SSS");
+    public static DateTimeFormatter dtfstart = DateTimeFormatter.ofPattern("HH:mm:ss");
+    public static DateTimeFormatter dtffinish = DateTimeFormatter.ofPattern("HH:mm:ss:SSS");
 
-    public Runner(String firstName, String lastName, int number) {
-        this.firstName = firstName;
-        this.lastName = lastName;
+    public Runner(int number, String firstname, String lastname) {
         this.number = number;
-    }
-
-    public String getFirstname() {
-        return firstName;
-    }
-
-    public String getLastname() {
-        return lastName;
-    }
-
-    public int getNumber() {
-        return number;
-    }
-
-    public LocalTime getStartTime() {
-        return startTime;
-    }    
-    
-    public String getStartTimeString(){
-        return startTime.format(dtfstart);
-    }
-
-    public LocalTime getFinishTime() {
-        return finishTime;
-    }
-    
-    public String getFinishTimeString(){
-        return finishTime.format(dtffinish);
+        this.firstname = firstname;
+        this.lastname = lastname;
     }
 
     public void setStartTime(String startTime) {
@@ -58,14 +30,42 @@ public class Runner implements Comparable<Runner>{
         this.finishTime = LocalTime.parse(finishTime, dtffinish);
     }
 
+    public LocalTime getStartTime() {
+        return startTime;
+    }
+
+    public LocalTime getFinishTime() {
+        return finishTime;
+    }
+    
+    public String getStartTimeString(){
+        return startTime.format(dtfstart);
+    }
+    
+    public String getFinishTimeString(){
+        return finishTime.format(dtffinish);
+    }
+
+    public int getNumber() {
+        return number;
+    }
+
     public LocalTime runningTime(){
         return LocalTime.ofNanoOfDay(finishTime.toNanoOfDay() - startTime.toNanoOfDay());
+    }
+
+    public String getFirstname() {
+        return firstname;
+    }
+
+    public String getLastname() {
+        return lastname;
     }
     
     @Override
     public String toString() {
-        return String.format("%-4d%-10s%-10s%-12s%-15s%-15s", number, firstName, lastName,
-                getStartTimeString(), getFinishTimeString(), runningTime().format(dtffinish));
+        return String.format("%-4d%-10s%-10s%-15s%-15s%-15s", number, firstname, lastname, getStartTimeString(), 
+                getFinishTimeString(),  runningTime().format(dtffinish));
     }
     
     @Override
@@ -73,11 +73,11 @@ public class Runner implements Comparable<Runner>{
         return this.runningTime().compareTo(o.runningTime());
     }
     
-    /*public static void main(String[] args){
-        Runner r = new Runner("Alice", "Malá", 23);
-        r.setStartTime("09:00:00");
-        r.setFinishTime("10:20:10:019");
-        System.out.println(r);
-    }*/   
     
+    /*public static void main(String[] args) {
+        Runner r = new Runner(101, "Alice", "Mala");
+        r.setStartTime("09:00:00");
+        r.setFinishTime("09:30:01:000");
+        System.out.println(r);
+    }*/
 }

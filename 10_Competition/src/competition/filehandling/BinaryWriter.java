@@ -27,15 +27,13 @@ public class BinaryWriter extends Writer {
             int n = 1;
             for (Runner runner : runners) {
                 dos.writeInt(n);
-                //dos.writeChar('.'); //zapisuju jenom data bez mezer, nových řádků a znaků důležitých pro výpis
-                //dos.writeUTF(resultFilepath); //binarni soubory jsou primárne určené k uložení a ne prohlížení
                 dos.writeUTF(runner.getFirstname());
-                int nChars = runner.getLastname().length(); //simulace writeUTF, uložím počet znaků Stringu až pak String 
+                int nChars = runner.getLastname().length();
                 dos.writeInt(nChars);
                 for (int i = 0; i < nChars; i++) {
                     dos.writeChar(runner.getLastname().charAt(i));
                 }
-                dos.writeLong(runner.runningTime().toNanoOfDay()); //čas vhodné uložit jako nanosekundy, ne String
+                dos.writeLong(runner.runningTime().toNanoOfDay());
                 n++;
             }
         }
