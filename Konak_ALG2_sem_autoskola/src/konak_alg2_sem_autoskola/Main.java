@@ -125,7 +125,9 @@ public class Main {
                     System.out.println("Options:\n1 - sort list\n2 - clear tab\n0 - go back");//nabídka
                     answer = checkAnswer(4);
                     if (answer.equals("1")) {
-                        System.out.println(printSortedResults(p, 1));//seřazené výsledky
+                        System.out.println("By name or by score? n/s");
+                        String answr = checkAnswer(5);
+                        System.out.println(printSortedResults(p, 2, answr));//seřazené výsledky
                     } else if (answer.equals("2")) { //úplné smazání tabulky
                         System.out.println("Are you sure? (y/n)\ny will delete all results permanently");
                         answer = checkAnswer(2);
@@ -263,17 +265,18 @@ public class Main {
      * Method prints sorted results
      *
      * @param t - instance of logic class
+     * @param s - switcher - 1: comaringInterface; 2: comparator
      * @return - String value of sorted results
      * @throws IOException
      */
-    public static String printSortedResults(ProgramLogic t, int s) throws IOException {
+    public static String printSortedResults(ProgramLogic t, int s, String sw) throws IOException {
         switch(s){
             //comparingInterface
             case 1:
                 return t.resultsToString(t.getComparedResults());
             //comparator
             case 2:
-                return t.resultsToString(t.comparatorByScore());
+                return t.resultsToString(t.comparatorUse(sw));
             default:
                 return "Wrong parameter!";        
         }               
@@ -311,7 +314,8 @@ public class Main {
         String[] ZOT = {"0", "1", "2"};
         String[] corAns = {"a", "b", "c"};
         String[] question = {"y", "n"};
-        String a = "e";
+        String[] comp = {"n", "s"};
+        String a = "e";        
 
         while (!correct) {
             try {
@@ -345,6 +349,15 @@ public class Main {
                 //pro odpovědi v testu
                 case 4:
                     for (String i : ZOT) {
+                        if (a.equals(i)) {
+                            correct = true;
+                            return a;
+                        }
+                    }
+                    break;
+                //s/n
+                case 5:
+                    for (String i : comp) {
                         if (a.equals(i)) {
                             correct = true;
                             return a;

@@ -11,14 +11,15 @@ import java.util.Comparator;
  *
  * @author Martin Koňák
  */
-public class ComparatorByScore implements Comparator<Result>{
+public class ComparatorByName implements Comparator<Result>{
     
     @Override
-    public int compare(Result o1, Result o2) {
-        if (o1.getScore() < o2.getScore()) {
+    public int compare(Result o1, Result o2){
+        if (o1.getName().charAt(0) > o2.getName().charAt(0)) {
             return 1;
         }else{
             return -1;
         }
     }
+    
 }

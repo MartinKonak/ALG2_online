@@ -44,29 +44,29 @@ public class ProgramLogic {
      */
     public void loadQuestions(String s1, String s2) throws FileNotFoundException, IOException {
         File quests = new File(System.getProperty("user.dir") + File.separator + "data" + File.separator + s1);
-        Scanner loadQuestions = new Scanner(quests);
-        while (loadQuestions.hasNext()) {
-            String q = loadQuestions.nextLine();
-            String a1 = loadQuestions.nextLine();
-            String a2 = loadQuestions.nextLine();
-            String a3 = loadQuestions.nextLine();
-            Question qe = new Question(q, a1, a2, a3);
-            switch (s2) {
-                case "e":
-                    easyQuestions.add(qe);
-                    break;
-                case "m":
-                    mediumQuestions.add(qe);
-                    break;
-                case "h":
-                    hardQuestions.add(qe);
-                    break;
-                case "H":
-                    healthQuestions.add(qe);
-                    break;
+        try (Scanner loadQuestions = new Scanner(quests)) {
+            while (loadQuestions.hasNext()) {
+                String q = loadQuestions.nextLine();
+                String a1 = loadQuestions.nextLine();
+                String a2 = loadQuestions.nextLine();
+                String a3 = loadQuestions.nextLine();
+                Question qe = new Question(q, a1, a2, a3);
+                switch (s2) {
+                    case "e":
+                        easyQuestions.add(qe);
+                        break;
+                    case "m":
+                        mediumQuestions.add(qe);
+                        break;
+                    case "h":
+                        hardQuestions.add(qe);
+                        break;
+                    case "H":
+                        healthQuestions.add(qe);
+                        break;
+                }
             }
         }
-        loadQuestions.close();
     }
 
     /**
@@ -191,19 +191,23 @@ public class ProgramLogic {
         return comparedResults;
     }
     
-    public ArrayList<Result> comparatorByScore() throws IOException{
+    public ArrayList<Result> comparatorUse(String sw) throws IOException{
         loadResults();
-        Result[] res = new Result[results.size()];
-        for (int i = 0; i < results.size(); i++) {
-            res[i] = results.get(i);
-        }
-        
-        Arrays.sort(res, new ComparatorByScore());
         
         ArrayList<Result> comparedResults = new ArrayList<Result>();
-        for (Result i : res) {
-            comparedResults.add(i);
+        for (Result r : results) {
+            comparedResults.add(r);
         }
+        
+        switch(sw){
+            case "s":
+                Collections.sort(comparedResults, new ComparatorByScore());
+                break;
+            case "n":
+                Collections.sort(comparedResults, new ComparatorByName());
+                break;
+        }
+        
         clearResults();
         return comparedResults;
     }

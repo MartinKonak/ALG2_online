@@ -8,3 +8,5 @@ Name: test05      Score: 7                 Time: 00:02:43
 Name: test06      Score: 4                 Time: 00:01:05
 Name: testmail    Score: 0                 Time: 00:00:09
 Name: mailtest2   Score: 7                 Time: 00:00:09
+Name: testmail005 Score: 10                Time: 00:00:07
+Name: fhrf        Score: 0                 Time: 00:00:01

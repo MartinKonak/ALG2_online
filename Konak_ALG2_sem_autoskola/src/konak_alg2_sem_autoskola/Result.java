@@ -43,6 +43,10 @@ public class Result implements ComparingInterface, Comparable<Result>{
     public int getScore() {
         return score;
     }
+
+    public String getName() {
+        return name;
+    }
     
     /**Comparing method
      * 
